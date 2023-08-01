@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{4A21872F-33BC-4B20-9F95-94789C6A9279}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BB84.Reporting.Tools", "src\BB84.Reporting.Tools\BB84.Reporting.Tools.csproj", "{C154F0E2-636B-48B6-ACAC-85845D858AAE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3A58C820-C615-4E8C-BC99-3B64462974B7}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitignore = .gitignore
+		Directory.Build.props = Directory.Build.props
+		Directory.Build.targets = Directory.Build.targets
+		Directory.Packages.props = Directory.Packages.props
+		LICENSE = LICENSE
+		PublicKey.snk = PublicKey.snk
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{EA86805A-0D79-4378-B161-4857B2A8D62F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BB84.Reporting.Tools.Tests", "tests\BB84.Reporting.Tools.Tests\BB84.Reporting.Tools.Tests.csproj", "{6F4D5827-E22F-4454-83B0-2EAC82A715CA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C154F0E2-636B-48B6-ACAC-85845D858AAE}.Debug|x64.ActiveCfg = Debug|x64
+		{C154F0E2-636B-48B6-ACAC-85845D858AAE}.Debug|x64.Build.0 = Debug|x64
+		{C154F0E2-636B-48B6-ACAC-85845D858AAE}.Release|x64.ActiveCfg = Release|x64
+		{C154F0E2-636B-48B6-ACAC-85845D858AAE}.Release|x64.Build.0 = Release|x64
+		{6F4D5827-E22F-4454-83B0-2EAC82A715CA}.Debug|x64.ActiveCfg = Debug|x64
+		{6F4D5827-E22F-4454-83B0-2EAC82A715CA}.Debug|x64.Build.0 = Debug|x64
+		{6F4D5827-E22F-4454-83B0-2EAC82A715CA}.Release|x64.ActiveCfg = Release|x64
+		{6F4D5827-E22F-4454-83B0-2EAC82A715CA}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C154F0E2-636B-48B6-ACAC-85845D858AAE} = {4A21872F-33BC-4B20-9F95-94789C6A9279}
+		{6F4D5827-E22F-4454-83B0-2EAC82A715CA} = {EA86805A-0D79-4378-B161-4857B2A8D62F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8E5917F3-FCC3-4105-9EA0-88C820A68870}
+	EndGlobalSection
+EndGlobal
