@@ -1,4 +1,5 @@
-﻿using System.Globalization;
+﻿using System.Drawing;
+using System.Globalization;
 
 namespace BB84.Reporting.Tools;
 
@@ -8,9 +9,39 @@ namespace BB84.Reporting.Tools;
 /// <remarks>
 /// Contains everything related to coloring.
 /// </remarks>
-public class Color
+public class Coloring
 {
 	private static readonly CultureInfo CultureInfo = CultureInfo.InvariantCulture;
+
+	/// <summary>
+	/// Returns the color represenation of a value.
+	/// </summary>
+	/// <param name="minValue">The minimum value.</param>
+	/// <param name="maxValue">The maximum value.</param>
+	/// <param name="value">The actual value to represent.</param>
+	public static Color GetRgbColor(int minValue, int maxValue, int value)
+		=> GetRgbColor(minValue, maxValue, (double)value);
+
+	/// <summary>
+	/// Returns the color represenation of a value.
+	/// </summary>
+	/// <param name="minValue">The minimum value.</param>
+	/// <param name="maxValue">The maximum value.</param>
+	/// <param name="value">The actual value to represent.</param>
+	public static Color GetRgbColor(double minValue, double maxValue, double value)
+	{
+		var values = GetRgbValues(minValue, maxValue, value);
+		return Color.FromArgb(values.Red, values.Green, values.Blue);
+	}
+
+	/// <summary>
+	/// Returns the string represenation of a value as RGB color code.
+	/// </summary>
+	/// <param name="minValue">The minimum value.</param>
+	/// <param name="maxValue">The maximum value.</param>
+	/// <param name="value">The actual value to represent.</param>
+	public static string GetRgbHexString(int minValue, int maxValue, int value)
+		=> GetRgbHexString(minValue, maxValue, (double)value);
 
 	/// <summary>
 	/// Returns the string represenation of a value as RGB color code.
