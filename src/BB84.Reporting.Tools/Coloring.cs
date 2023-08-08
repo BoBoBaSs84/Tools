@@ -13,26 +13,7 @@ public class Coloring
 {
 	private static readonly CultureInfo CultureInfo = CultureInfo.InvariantCulture;
 
-	/// <summary>
-	/// Returns the color represenation of a value.
-	/// </summary>
-	/// <param name="minValue">The minimum value.</param>
-	/// <param name="maxValue">The maximum value.</param>
-	/// <param name="value">The actual value to represent.</param>
-	public static Color GetRgbColor(int minValue, int maxValue, int value)
-		=> GetRgbColor(minValue, maxValue, (double)value);
-
-	/// <summary>
-	/// Returns the color represenation of a value.
-	/// </summary>
-	/// <param name="minValue">The minimum value.</param>
-	/// <param name="maxValue">The maximum value.</param>
-	/// <param name="value">The actual value to represent.</param>
-	public static Color GetRgbColor(double minValue, double maxValue, double value)
-	{
-		var values = GetRgbValues(minValue, maxValue, value);
-		return Color.FromArgb(values.Red, values.Green, values.Blue);
-	}
+	#region public methods
 
 	/// <summary>
 	/// Returns the string represenation of a value as RGB color code.
@@ -40,8 +21,8 @@ public class Coloring
 	/// <param name="minValue">The minimum value.</param>
 	/// <param name="maxValue">The maximum value.</param>
 	/// <param name="value">The actual value to represent.</param>
-	public static string GetRgbHexString(int minValue, int maxValue, int value)
-		=> GetRgbHexString(minValue, maxValue, (double)value);
+	public static string GetHeatMapColorString(int minValue, int maxValue, int value)
+		=> GetHeatMapColorString(minValue, maxValue, (double)value);
 
 	/// <summary>
 	/// Returns the string represenation of a value as RGB color code.
@@ -49,17 +30,12 @@ public class Coloring
 	/// <param name="minValue">The minimum value.</param>
 	/// <param name="maxValue">The maximum value.</param>
 	/// <param name="value">The actual value to represent.</param>
-	public static string GetRgbHexString(double minValue, double maxValue, double value)
-	{
-		RgbValues rgbValues = GetRgbValues(minValue, maxValue, value);
+	public static string GetHeatMapColorString(double minValue, double maxValue, double value)
+		=> GetHexStringFromColor(GetRgbValues(minValue, maxValue, value));
 
-		return string.Concat(
-			"#",
-			rgbValues.Red.ToString("X2", CultureInfo),
-			rgbValues.Green.ToString("X2", CultureInfo),
-			rgbValues.Blue.ToString("X2", CultureInfo)
-			);
-	}
+	#endregion public methods
+
+	#region private methods
 
 	private static RgbValues GetRgbValues(double minValue, double maxValue, double value)
 	{
@@ -87,6 +63,9 @@ public class Coloring
 		return (int)Math.Round(colorStrength * 255);
 	}
 
+	private static string GetHexStringFromColor(RgbValues values)
+		=> string.Concat("#", values.Red.ToString("X2", CultureInfo), values.Green.ToString("X2", CultureInfo), values.Blue.ToString("X2", CultureInfo));
+
 	private sealed class RgbValues
 	{
 		public RgbValues(int red, int green, int blue)
@@ -100,4 +79,6 @@ public class Coloring
 		public int Green { get; }
 		public int Blue { get; }
 	}
+
+	#endregion private methods
 }
