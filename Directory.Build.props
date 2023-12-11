@@ -14,24 +14,21 @@
 		<AnalysisLevel>latest</AnalysisLevel>
 		<AnalysisMode>recommended</AnalysisMode>
 		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+		<AssemblyOriginatorKeyFile>..\..\PublicKey.snk</AssemblyOriginatorKeyFile>
 		<CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+		<DebugType>none</DebugType>
 		<Deterministic>true</Deterministic>
 		<EnableNETAnalyzers>true</EnableNETAnalyzers>
 		<GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+		<GenerateDocumentationFile>false</GenerateDocumentationFile>
 		<GeneratedAssemblyInfoFile>Properties\AssemblyInfo.cs</GeneratedAssemblyInfoFile>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<LangVersion>latest</LangVersion>
 		<NeutralLanguage>en-US</NeutralLanguage>
 		<Nullable>enable</Nullable>
-		<Platforms>x64</Platforms>
 		<PlatformTarget>x64</PlatformTarget>
+		<Platforms>x64</Platforms>
 		<SignAssembly>True</SignAssembly>
-		<AssemblyOriginatorKeyFile>..\..\PublicKey.snk</AssemblyOriginatorKeyFile>
-	</PropertyGroup>
-
-	<PropertyGroup Condition="'$(Configuration)'=='Release'">
-		<DebugType>none</DebugType>
-		<GenerateDocumentationFile>false</GenerateDocumentationFile>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)'=='Debug'">
@@ -40,11 +37,12 @@
 	</PropertyGroup>
 
 	<PropertyGroup Condition="!$(MSBuildProjectName.EndsWith('Tests'))" Label="Metadata">
-		<Authors>BoBoBaSs84</Authors>
-		<Company>https://github.com/BoBoBaSs84</Company>
-		<Copyright>Copyright © $(VersionMajor) BoBoBaSs84</Copyright>
+		<Author>BoBoBaSs84</Author>
+		<Authors>$(Author)</Authors>
+		<Company>https://github.com/$(Author)</Company>
+		<Copyright>Copyright © $(VersionMajor) $(Author)</Copyright>
 		<Product>Tools</Product>
-		<RepositoryUrl>https://github.com/BoBoBaSs84/Tools</RepositoryUrl>
+		<RepositoryUrl>https://github.com/$(Author)/Tools</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
 		<PackageReadmeFile>..\..\README.md</PackageReadmeFile>
 		<PackageLicenseFile>..\..\LICENSE</PackageLicenseFile>
@@ -59,20 +57,15 @@
 
 	<ItemGroup Condition="!$(MSBuildProjectName.EndsWith('Tests'))">
 		<InternalsVisibleTo Include="$(AssemblyName).Tests" Key="00240000048000009400000006020000002400005253413100040000010001005d5c8afb57f483c305a199ef472c747eecad2281c0db73ac5098736445248a0aa9f1f7bae4166afe1780ecb1fc79fdc345039182ab83e7d5139f25b181b87f2332d0836650c19132d90aff054e803ef01d1497f3ed99763f4b3c209da10320c226b05429ef61b939ac8d743c1c13b3b573c6be0edec8c157a964ee728841c3e4" />
-		
 		<None Include="..\..\LICENSE" Pack="true" PackagePath="\" />
 		<None Include="..\..\README.md" Pack="true" PackagePath="\" />
 	</ItemGroup>
 
 	<ItemGroup Condition="$(MSBuildProjectName.EndsWith('Tests'))">
-		<PackageReference Include="MSTest.TestAdapter" />
-		<PackageReference Include="MSTest.TestFramework" />
-		<PackageReference Include="Microsoft.NET.Test.Sdk" />
-		<PackageReference Include="coverlet.collector" />
-	</ItemGroup>
-
-	<ItemGroup>
-		<Reference Include="System.Net.Http" />
+		<PackageReference Include="MSTest.TestAdapter" Version="3.1.1"/>
+		<PackageReference Include="MSTest.TestFramework" Version="3.1.1"/>
+		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.7.2" />
+		<PackageReference Include="coverlet.collector" Version="6.0.0"/>
 	</ItemGroup>
 
 	<ItemGroup>

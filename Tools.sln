@@ -7,21 +7,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{4A21872F-33B
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BB84.Reporting.Tools", "src\BB84.Reporting.Tools\BB84.Reporting.Tools.csproj", "{C154F0E2-636B-48B6-ACAC-85845D858AAE}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3A58C820-C615-4E8C-BC99-3B64462974B7}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{EA86805A-0D79-4378-B161-4857B2A8D62F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BB84.Reporting.Tools.Tests", "tests\BB84.Reporting.Tools.Tests\BB84.Reporting.Tools.Tests.csproj", "{6F4D5827-E22F-4454-83B0-2EAC82A715CA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{745BBCC4-408D-4761-9FF3-225B1ACA0571}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
+		.filenesting.json = .filenesting.json
 		.gitignore = .gitignore
 		Directory.Build.props = Directory.Build.props
 		Directory.Build.targets = Directory.Build.targets
-		Directory.Packages.props = Directory.Packages.props
 		LICENSE = LICENSE
 		PublicKey.snk = PublicKey.snk
 		README.md = README.md
 	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{EA86805A-0D79-4378-B161-4857B2A8D62F}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BB84.Reporting.Tools.Tests", "tests\BB84.Reporting.Tools.Tests\BB84.Reporting.Tools.Tests.csproj", "{6F4D5827-E22F-4454-83B0-2EAC82A715CA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

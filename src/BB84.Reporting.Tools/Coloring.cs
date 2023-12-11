@@ -1,5 +1,4 @@
-﻿using System.Drawing;
-using System.Globalization;
+﻿using System.Globalization;
 
 namespace BB84.Reporting.Tools;
 
@@ -66,18 +65,11 @@ public class Coloring
 	private static string GetHexStringFromColor(RgbValues values)
 		=> string.Concat("#", values.Red.ToString("X2", CultureInfo), values.Green.ToString("X2", CultureInfo), values.Blue.ToString("X2", CultureInfo));
 
-	private sealed class RgbValues
+	private sealed class RgbValues(int red, int green, int blue)
 	{
-		public RgbValues(int red, int green, int blue)
-		{
-			Red = red;
-			Green = green;
-			Blue = blue;
-		}
-
-		public int Red { get; }
-		public int Green { get; }
-		public int Blue { get; }
+		public int Red { get; } = red;
+		public int Green { get; } = green;
+		public int Blue { get; } = blue;
 	}
 
 	#endregion private methods
