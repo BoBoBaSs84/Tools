@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "BB84.FetchAndPull": {
+      "commandName": "Project",
+      "commandLineArgs": "D:\\Source"
+    }
+  }
+}
