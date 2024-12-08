@@ -25,6 +25,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BB84.FetchAndPull", "src\BB84.FetchAndPull\BB84.FetchAndPull.csproj", "{B1865CB2-6977-4A52-BF0C-42186CD4409E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BB84.GitClean", "src\BB84.GitClean\BB84.GitClean.csproj", "{1F13D11C-83F6-4D90-B4BE-ACB6B9328434}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -43,6 +45,10 @@ Global
 		{B1865CB2-6977-4A52-BF0C-42186CD4409E}.Debug|x64.Build.0 = Debug|x64
 		{B1865CB2-6977-4A52-BF0C-42186CD4409E}.Release|x64.ActiveCfg = Release|x64
 		{B1865CB2-6977-4A52-BF0C-42186CD4409E}.Release|x64.Build.0 = Release|x64
+		{1F13D11C-83F6-4D90-B4BE-ACB6B9328434}.Debug|x64.ActiveCfg = Debug|x64
+		{1F13D11C-83F6-4D90-B4BE-ACB6B9328434}.Debug|x64.Build.0 = Debug|x64
+		{1F13D11C-83F6-4D90-B4BE-ACB6B9328434}.Release|x64.ActiveCfg = Release|x64
+		{1F13D11C-83F6-4D90-B4BE-ACB6B9328434}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -51,6 +57,7 @@ Global
 		{C154F0E2-636B-48B6-ACAC-85845D858AAE} = {4A21872F-33BC-4B20-9F95-94789C6A9279}
 		{6F4D5827-E22F-4454-83B0-2EAC82A715CA} = {EA86805A-0D79-4378-B161-4857B2A8D62F}
 		{B1865CB2-6977-4A52-BF0C-42186CD4409E} = {4A21872F-33BC-4B20-9F95-94789C6A9279}
+		{1F13D11C-83F6-4D90-B4BE-ACB6B9328434} = {4A21872F-33BC-4B20-9F95-94789C6A9279}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8E5917F3-FCC3-4105-9EA0-88C820A68870}
