@@ -21,6 +21,7 @@ jobs:
       fail-fast: false
       matrix:
         language: [ 'csharp' ]
+        build-mode: [ 'autobuild' ]
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
