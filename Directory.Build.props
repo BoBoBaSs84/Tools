@@ -61,13 +61,6 @@
 		<None Include="..\..\README.md" Pack="true" PackagePath="\" />
 	</ItemGroup>
 
-	<ItemGroup Condition="$(MSBuildProjectName.EndsWith('Tests'))">
-		<PackageReference Include="MSTest.TestAdapter" Version="3.8.2"/>
-		<PackageReference Include="MSTest.TestFramework" Version="3.8.2"/>
-		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.13.0" />
-		<PackageReference Include="coverlet.collector" Version="6.0.4"/>
-	</ItemGroup>
-
 	<ItemGroup>
 		<Folder Include="Properties\" />
 	</ItemGroup>
