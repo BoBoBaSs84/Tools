@@ -8,4 +8,9 @@
 		<ProjectReference Include="..\..\src\BB84.Reporting.Tools\BB84.Reporting.Tools.csproj" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <PackageReference Update="MSTest.TestAdapter" Version="3.8.2" />
+	  <PackageReference Update="MSTest.TestFramework" Version="3.8.2" />
+	</ItemGroup>
+
 </Project>
