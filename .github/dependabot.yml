@@ -9,13 +9,6 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
-    groups:
-      mstest-dependencies:
-        patterns:
-          - "MSTest*"
-      microsoft-dependencies:
-        patterns:
-          - "Microsoft*"
       
   - package-ecosystem: "github-actions"
     directory: "/"
