@@ -3,6 +3,6 @@
     <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
   </PropertyGroup>
   <ItemGroup>
-    <PackageVersion Include="MSTest" Version="3.10.3" />
+    <PackageVersion Include="MSTest" Version="3.10.4" />
   </ItemGroup>
 </Project>
