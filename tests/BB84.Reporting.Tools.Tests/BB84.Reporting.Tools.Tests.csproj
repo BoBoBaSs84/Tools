@@ -1,6 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
+		<IsTestProject>True</IsTestProject>
 		<TargetFramework>net48</TargetFramework>
+		<IsPackable>False</IsPackable>
 	</PropertyGroup>
 	<ItemGroup>
     <PackageReference Include="MSTest" />
