@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "M3U.Console": {
+      "commandName": "Project",
+      "commandLineArgs": "\"C:\\Users\\Bobo\\Downloads\""
+    }
+  }
+}

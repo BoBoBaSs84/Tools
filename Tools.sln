@@ -14,18 +14,24 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{745BBCC4-408D-4761-9FF3-225B1ACA0571}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
+		.gitattributes = .gitattributes
 		.gitignore = .gitignore
+		CODEOWNERS = CODEOWNERS
+		CODE_OF_CONDUCT.md = CODE_OF_CONDUCT.md
 		Directory.Build.props = Directory.Build.props
 		Directory.Build.targets = Directory.Build.targets
 		Directory.Packages.props = Directory.Packages.props
 		LICENSE = LICENSE
 		PublicKey.snk = PublicKey.snk
 		README.md = README.md
+		test.runsettings = test.runsettings
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BB84.FetchAndPull", "src\BB84.FetchAndPull\BB84.FetchAndPull.csproj", "{B1865CB2-6977-4A52-BF0C-42186CD4409E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BB84.GitClean", "src\BB84.GitClean\BB84.GitClean.csproj", "{1F13D11C-83F6-4D90-B4BE-ACB6B9328434}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BB84.EPG.Downloader", "src\BB84.EPG.Downloader\BB84.EPG.Downloader.csproj", "{7FEFE5A1-6FCA-0784-E9F9-62823696A518}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,6 +55,10 @@ Global
 		{1F13D11C-83F6-4D90-B4BE-ACB6B9328434}.Debug|x64.Build.0 = Debug|x64
 		{1F13D11C-83F6-4D90-B4BE-ACB6B9328434}.Release|x64.ActiveCfg = Release|x64
 		{1F13D11C-83F6-4D90-B4BE-ACB6B9328434}.Release|x64.Build.0 = Release|x64
+		{7FEFE5A1-6FCA-0784-E9F9-62823696A518}.Debug|x64.ActiveCfg = Debug|x64
+		{7FEFE5A1-6FCA-0784-E9F9-62823696A518}.Debug|x64.Build.0 = Debug|x64
+		{7FEFE5A1-6FCA-0784-E9F9-62823696A518}.Release|x64.ActiveCfg = Release|x64
+		{7FEFE5A1-6FCA-0784-E9F9-62823696A518}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -58,6 +68,7 @@ Global
 		{6F4D5827-E22F-4454-83B0-2EAC82A715CA} = {EA86805A-0D79-4378-B161-4857B2A8D62F}
 		{B1865CB2-6977-4A52-BF0C-42186CD4409E} = {4A21872F-33BC-4B20-9F95-94789C6A9279}
 		{1F13D11C-83F6-4D90-B4BE-ACB6B9328434} = {4A21872F-33BC-4B20-9F95-94789C6A9279}
+		{7FEFE5A1-6FCA-0784-E9F9-62823696A518} = {4A21872F-33BC-4B20-9F95-94789C6A9279}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8E5917F3-FCC3-4105-9EA0-88C820A68870}
