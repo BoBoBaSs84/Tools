@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "SlnxMigrator": {
+      "commandName": "Project",
+      "commandLineArgs": "--user \"BoBoBaSs84\" --token \"Test\" --assignee \"BoBoBaSs84\""
+    }
+  }
+}

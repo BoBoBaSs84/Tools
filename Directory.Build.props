@@ -21,7 +21,6 @@
 		<EnableNETAnalyzers>true</EnableNETAnalyzers>
 		<GenerateAssemblyInfo>true</GenerateAssemblyInfo>
 		<GenerateDocumentationFile>false</GenerateDocumentationFile>
-		<GeneratedAssemblyInfoFile>Properties\AssemblyInfo.cs</GeneratedAssemblyInfoFile>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<LangVersion>latest</LangVersion>
 		<NeutralLanguage>en-US</NeutralLanguage>
@@ -59,10 +58,6 @@
 		<InternalsVisibleTo Include="$(AssemblyName).Tests" Key="00240000048000009400000006020000002400005253413100040000010001005d5c8afb57f483c305a199ef472c747eecad2281c0db73ac5098736445248a0aa9f1f7bae4166afe1780ecb1fc79fdc345039182ab83e7d5139f25b181b87f2332d0836650c19132d90aff054e803ef01d1497f3ed99763f4b3c209da10320c226b05429ef61b939ac8d743c1c13b3b573c6be0edec8c157a964ee728841c3e4" />
 		<None Include="..\..\LICENSE" Pack="true" PackagePath="\" />
 		<None Include="..\..\README.md" Pack="true" PackagePath="\" />
-	</ItemGroup>
-
-	<ItemGroup>
-		<Folder Include="Properties\" />
 	</ItemGroup>
 
 </Project>

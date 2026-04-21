@@ -1,0 +1,40 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+  </Configurations>
+  <Folder Name="/Solution Items/">
+    <File Path=".editorconfig" />
+    <File Path=".gitattributes" />
+    <File Path=".gitignore" />
+    <File Path="CODEOWNERS" />
+    <File Path="CODE_OF_CONDUCT.md" />
+    <File Path="Directory.Build.props" />
+    <File Path="Directory.Build.targets" />
+    <File Path="Directory.Packages.props" />
+    <File Path="LICENSE" />
+    <File Path="PublicKey.snk" />
+    <File Path="README.md" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/BB84.EPG.Downloader/BB84.EPG.Downloader.csproj">
+      <Platform Project="x64" />
+    </Project>
+    <Project Path="src/BB84.FetchAndPull/BB84.FetchAndPull.csproj">
+      <Platform Project="x64" />
+    </Project>
+    <Project Path="src/BB84.GitClean/BB84.GitClean.csproj">
+      <Platform Project="x64" />
+    </Project>
+    <Project Path="src/BB84.Reporting.Tools/BB84.Reporting.Tools.csproj">
+      <Platform Project="x64" />
+    </Project>
+    <Project Path="src/BB84.SlnxMigrator/BB84.SlnxMigrator.csproj">
+      <Platform Project="x64" />
+    </Project>
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/BB84.Reporting.Tools.Tests/BB84.Reporting.Tools.Tests.csproj">
+      <Platform Project="x64" />
+    </Project>
+  </Folder>
+</Solution>
