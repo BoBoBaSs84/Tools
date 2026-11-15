@@ -6,6 +6,12 @@ on:
   pull_request:
     branches: [ main ]
 
+env:
+  DOTNET_NOLOGO: true
+  DOTNET_CLI_TELEMETRY_OPTOUT: true
+  SOLUTION: Tools.slnx
+  CONFIGURATION: Release
+
 jobs:
   build-and-test:
     name: Build & Test
@@ -17,19 +23,21 @@ jobs:
 
       - name: Setup .NET
         uses: actions/setup-dotnet@v6
+        with:
+          global-json-file: global.json
 
       - name: Restore dependencies
-        run: dotnet restore Tools.slnx
+        run: dotnet restore ${{ env.SOLUTION }}
 
       - name: Build solution
-        run: dotnet build Tools.slnx --configuration Release --no-restore
+        run: dotnet build ${{ env.SOLUTION }} --configuration ${{ env.CONFIGURATION }} --no-restore
 
       - name: Run tests
-        run: dotnet test Tools.slnx --configuration Release --no-build --verbosity normal --logger "trx;LogFileName=test-results.trx"
+        run: dotnet test ${{ env.SOLUTION }} --configuration ${{ env.CONFIGURATION }} --no-build --report-trx --results-directory ./test-results
 
       - name: Upload test results
         if: always()
         uses: actions/upload-artifact@v7
         with:
           name: test-results
-          path: '**/TestResults/*.trx'
+          path: ./test-results/*.trx

@@ -1,12 +1,7 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="MSTest.Sdk">
 	<PropertyGroup>
-		<IsTestProject>True</IsTestProject>
 		<TargetFramework>net48</TargetFramework>
-		<IsPackable>False</IsPackable>
 	</PropertyGroup>
-	<ItemGroup>
-    <PackageReference Include="MSTest" />
-	</ItemGroup>
 	<ItemGroup>
 		<ProjectReference Include="..\..\src\BB84.Reporting.Tools\BB84.Reporting.Tools.csproj" />
 	</ItemGroup>
